@@ -1,9 +1,9 @@
-const express = require('express');
+﻿const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('<h1>Version 1 desplegada con Render</h1>');
+  res.send('<h1>Version final — pipeline CI/CD completo</h1>');
 });
 
 if (require.main === module) {
