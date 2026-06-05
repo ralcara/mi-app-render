@@ -11,3 +11,4 @@ if (require.main === module) {
 }
 
 module.exports = app;
+esto es un error de sintaxis }{
