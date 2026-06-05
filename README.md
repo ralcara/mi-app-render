@@ -1,11 +1,11 @@
-﻿# mi-app-render
+# mi-app-render
 
 Aplicacion web desplegada en Render con pipeline CI/CD automatizado mediante GitHub Actions.
 
 ## Que hace la aplicacion
 
-Sirve una API Express que demuestra un pipeline CI/CD completo:
-commit local → tests automaticos → despliegue en produccion → rollback si hay fallo.
+Sirve una aplicacion Node.js con Express que demuestra un pipeline CI/CD completo:
+commit local - tests automaticos - despliegue en produccion - rollback si hay fallo.
 
 ## Como ejecutarla en local
 
@@ -28,22 +28,14 @@ Para ejecutar los tests:
             |
     GitHub Actions ejecuta ci.yml
             |
-      npm ci → npm test
+      npm install - node node_modules/jest/bin/jest.js
             |
     Tests pasan (exit 0)       Tests fallan (exit 1)
             |                          |
     Render detecta el push     Workflow en rojo
-    y ejecuta Build Command    Render aborta el build
-            |
-      npm install && npm test
-            |
-    Deploy a produccion
+    y ejecuta el build         deploy bloqueado
             |
     App disponible en URL publica de Render
-
-GitHub Actions actua como gate de calidad en el repositorio.
-Render ejecuta los tests de nuevo en su Build Command como segunda capa.
-Si el build de Render falla, la version en produccion no se sustituye.
 
 ## Como hacer un rollback
 
