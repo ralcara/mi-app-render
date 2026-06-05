@@ -1,4 +1,4 @@
-const express = require('express');
+﻿const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -11,4 +11,3 @@ if (require.main === module) {
 }
 
 module.exports = app;
-esto es un error de sintaxis }{
