@@ -1,17 +1,1 @@
-{
-  "name": "mi-app-render",
-  "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "test": "node node_modules/jest/bin/jest.js",
-    "build": "echo build ok"
-  },
-  "dependencies": {
-    "express": "4.21.2"
-  },
-  "devDependencies": {
-    "jest": "29.7.0",
-    "supertest": "6.3.4"
-  }
-}
+{"name":"mi-app-render","version":"1.0.0","main":"app.js","scripts":{"start":"node app.js","test":"jest","build":"echo build ok"},"dependencies":{"express":"4.18.2"},"devDependencies":{"jest":"29.7.0","supertest":"6.3.4"}}
