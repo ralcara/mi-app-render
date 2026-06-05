@@ -11,7 +11,7 @@ commit local → tests automaticos → despliegue en produccion → rollback si 
 
 Requisitos: Node.js 20 o superior, Git.
 
-    git clone https://github.com/TUUSUARIO/mi-app-render.git
+    git clone https://github.com/ralcara/mi-app-render.git
     cd mi-app-render
     npm install
     npm start
