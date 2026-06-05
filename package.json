@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "npx --yes jest",
+    "test": "node node_modules/jest/bin/jest.js",
     "build": "echo build ok"
   },
   "dependencies": {
